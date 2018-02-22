@@ -1,0 +1,341 @@
+html,
+body{
+	margin:0;
+	padding:0;
+	background:#fff;
+	font-family: 'Open Sans', sans-serif;
+	overflow-x: hidden
+ }
+li{
+	list-style-type:none;
+}
+.icon {
+	color:white;
+	width: 32px;
+	/* height: 32px; */
+	max-width: 100%;
+    height: auto;
+	
+}
+
+.iconTab {
+	color:white;
+	width: 25px;
+	/* height: 32px; */
+	max-width: 100%;
+    height: auto;
+	
+}
+.icon-user{
+	position: absolute;
+    right: 244px;
+    width: 26px;
+    height: 26px;
+    top: 3px;
+}
+.header-left-icon{
+	
+	cursor: pointer;
+}
+
+.statusHeader{
+	border: none;
+    background: black;
+    color: white;
+    outline: 0px;
+}
+.left-tab{
+	padding: 0px;
+}
+.tabView-left {
+	padding-right: 0px;
+    background: #212b38;
+	height: 48px;
+	padding-top: 10px;
+}
+
+.tabView-left-icon{
+	cursor: pointer;
+}
+
+.tabView-left-icon i{
+	color:white;
+	font-size: 18px;
+}
+
+.activeTabText{
+	display: show;
+}
+
+.inactiveTabText{
+	display: none;
+}
+
+.tabText{
+	font-size: 10px;
+	color: white; 
+}
+
+
+.tab-list-text{
+	font-size: 13px;
+	cursor: pointer;
+	
+}
+
+.tab-list-active {
+	background-color: #69737F;
+	border-right: 4px solid white;
+	margin-right: 0px;
+}
+
+.toggleButton {
+	display: none;
+	visibility: hidden;
+}
+/*  */
+#expandDevelopment {
+	height: 0px;
+	overflow:hidden ;
+	transition: height 0.3s;
+}  
+#toggleDevelopment:checked ~ #expandDevelopment{
+	height: auto;
+}
+#toggleDevelopment:checked ~ div label::before {
+	content: "\f01b";
+}
+/*  */
+
+/* Toggol tab Menu*/
+#expandQATeam {
+	height: 0px;
+	overflow:hidden ;
+	transition: height 0.3s;
+}  
+#toggleQATeam:checked ~ #expandQATeam {
+	height: auto;
+}
+#toggleQATeam:checked ~ div label::before {
+	content: "\f01b";
+}
+/* */
+#expandProudctMgt  {
+	height: 0px;
+	overflow:hidden ;
+	transition: height 0.3s;
+}  
+#toggleProudctMgt:checked ~ #expandProudctMgt {
+	height: auto;
+}
+#toggleProudctMgt:checked ~ div label::before {
+	content: "\f01b";
+}
+/* */
+#expandSupport{
+	height: 0px;
+	overflow:hidden ;
+	transition: height 0.3s;
+}  
+#toggleSupport:checked ~ #expandSupport {
+	height: auto;
+}
+#toggleSupport:checked ~ div label::before {
+	content: "\f01b";
+}
+/* */
+
+/* */
+#expandServerDev{
+	height: 0px;
+	overflow:hidden ;
+	transition: height 0.3s;
+}  
+#toggleServerDev:checked ~ #expandServerDev {
+	height: auto;
+}
+#toggleServerDev:checked ~ div label::before {
+	content: "\f01b";
+}
+/* */
+
+
+label {
+	text-align: center;
+	
+}
+label:hover {
+	color: #000;
+}
+
+label::before {
+    font-family: FontAwesome;
+    /* font-weight: bold; */
+    font-size: 15px;
+    content: "\f01a";
+    /* vertical-align: text-top; */
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 3px;
+    /* background: url(images/icons/down_64x64.png) */
+ /* background: radial-gradient(ellipse at center, #CCC 50%, transparent 50%); */;
+    padding-left: 3px;
+    margin-top: -4px;
+}
+
+
+.toggleButtonText{
+    /* background-color: #2c3a4b; */
+    width: 98%;
+    text-align: left;
+    padding: 3px;
+    padding-top: 6px;
+}
+
+.toggleGroupColor{
+	background-color: #2c3a4b;
+	width: 98%;
+}
+
+.centerTopTabLeft{
+	color: white;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 0px;
+}
+
+.centerSmallBox{
+	background-color: #445366;
+	padding: 25px;
+	cursor: pointer;
+	margin-bottom: 20px;
+}
+.centerSmallBox2 {
+	height: 50px;
+	padding: 15px;
+}
+.centerSmallBoxText{
+	color:black;
+	font-size: 16px;
+	font-weight: 999;
+}
+
+.showPanel{
+	display: block;
+}
+.hidePanel{
+	display: none;
+}
+
+.chatForm{
+	/* position: absolute; */
+	width: 98%;
+
+}
+
+.chatBoxMain{
+
+    /* height: 450px; */
+    overflow: hidden;
+    padding: 0;
+}
+
+.chatBoxMain ul{
+	overflow-y: auto;
+	width:98%;
+    list-style-type: none;
+    padding: 18px;
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.chatBoxMain ul li{
+	margin-top: 5px;
+	width:100%
+}
+
+.chatBoxTextEditor {
+	position: absolute;
+    bottom: 10px;
+    width: 100%;
+    display: flex;
+}
+.msj {
+    /* float: left; */
+    /* background: black; */
+}
+/* .macro {
+    margin-top: 5px;
+    width: 85%;
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+} */
+.topChatLine{
+	border-bottom: 2px solid #E8EAEC;
+    width: 100%;
+    margin-left: -13px;
+    margin-bottom: 14px;
+}
+.avatar {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.avatar img{
+	width: 40px;
+	margin-left: 10px;
+ }
+
+.chat-user-name{
+	color:#374454;
+	font-size: 18px;
+    font-weight: bold;
+}
+.chat-time{
+	color:#374454;
+	font-size: 12px;
+    font-weight: bold;
+}
+
+.chat-content-div{
+	padding-left: 0px;
+	background-color: #8FB9ED;
+	color: #374454;
+}
+
+.chat-content{
+	font-size: 15px;
+	margin-left: -8px;
+	text-align: justify;
+    line-height: initial;
+}
+
+.member-img{
+    position: absolute;
+    right: 2px;
+    width: 28px;
+    height: 28px;
+    top: 2px;
+}
+.member-icon{
+	color: white;
+    max-width: 100%;
+    height: auto;
+
+}
+
+.member-name{
+	font-size: 14px
+}
+
+.member-status{
+	font-size: 10px;
+}
+
+.memberList ul li{
+	cursor: pointer;
+}

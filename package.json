@@ -1,0 +1,23 @@
+{
+  "name": "airlineconsole",
+  "version": "1.0.1",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "dependencies": {
+    "ejs": "~0.8.4",
+    "express": "~3.0.0",
+    "image-downloader": "^2.0.3"
+  },
+  "devDependencies": {
+    "connect-livereload": "~0.2.0",
+    "grunt": "~0.4.1",
+    "matchdep": "~0.1.2",
+    "morgan": "~1.7.0",
+    "nodemon": "latest",
+    "debug": "^2.6.3"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  }
+}
