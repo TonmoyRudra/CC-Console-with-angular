@@ -339,3 +339,39 @@ label::before {
 .memberList ul li{
 	cursor: pointer;
 }
+
+.profile-top-img-green{
+	width: 25px;
+    border: 2px solid #17f500;
+}
+
+.profile-top-img-red{
+	width: 25px;
+    border: 2px solid red0;
+}
+
+.profile-avatar-img{
+	max-width: 250px;
+}
+
+.profile-avatar-address{
+	padding-top: 6px;
+    font-size: 12px;
+	color: black;
+	font-weight: bold;
+}
+
+.profile-icon-big-img{
+	max-width: 75px;
+}
+.profile-big-icon-text{
+	font-size: 18px;
+    padding-top: 5px;
+}
+.profile-big-icon-text-num span{
+	font-size: 10px;
+}
+
+.profile-big-icon-text-num img{
+	width: 15px;
+}

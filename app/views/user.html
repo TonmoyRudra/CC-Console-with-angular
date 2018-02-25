@@ -25,31 +25,38 @@
              <div class="mainPanelCenter" style=" background-color:#677587;">
                  <div class="col-md-12 left-tab" style="padding: 0px;">
                      <!-- Default Panel -->
-                     <div class=" defaultPanel tabs" style="height:48px; background-color:#2C3A4B;  padding-top: 5px; display: block;">
+                     <div class=" defaultPanel tabs" style="height:48px; background-color:#2C3A4B;  padding-top: 5px; display: none;">
                      </div>
                      <!-- Default Panel -->
      
                      <!--Channel Single -->
-                     <div class="channelSingle tabs standard" style="display: none;">
+                     <div class="channelSingle tabs standard" style="display: block;">
                          <div class="col-md-12 left-tab" style="padding: 0px;">
                              <div style="height:48px; background-color:#2C3A4B;  padding-top: 1px;">
                                  <div class="col-md-6 centerTopTabLeft">
                                      <div class="row">
-                                         <div class="col-md-12" style="padding-left: 0px; padding-right:0px;">
+                                         <!-- <div class="col-md-12" style="padding-left: 0px; padding-right:0px;">
                                              <span class="tabView-left-icon channel">
                                                  <img src="images/icons/channel_512x512.png" style="width:25px;" />
                                                  <span class="">Server</span>
                                              </span>
-                                         </div>
+                                         </div> -->
+                                         <div class="col-md-12" style="padding-left: 0px; padding-right:0px;">
+                                                <span class="tabView-left-icon channel">
+                                                    <img class="profile-top-img-green img-circle" src="images/icons/chatPic.jpg" />
+                                                    <span class="">Luigs Pawn</span>
+                                                    <span class="" style="color:#00F500;">Available</span>
+                                                </span>
+                                        </div>
      
                                      </div>
                                  </div>
                                  <div class="col-md-6 centerTopTabRight">
                                      <ul class="tab-links">
                                          <li class="" style=" line-height: 0em;">
-                                             <a href="#settings">
+                                             <a href="#profile">
                                                  <span class="tabView-left-icon channel">
-                                                     <img src="images/icons/settings_512x512.png" title="Settings" class="iconTab" />
+                                                     <img src="images/icons/profile_512x512.png" title="Profile" class="iconTab" />
                                                  </span>
                                              </a>
                                          </li>
@@ -83,10 +90,90 @@
      
                          <div class="col-md-12 tab-content">
                              <div>
-                                 <div id="settings" class="tab " style="display: none;">
+                                 <div id="profile" class="tab " style="display: none;">
                                      <!-- -->
-                                     <div class="" style=" padding: 0px;padding-left: 4px;">
-                                         <p>setting</p>
+                                     <div class="row" style=" padding: 0px;padding-left: 4px;">
+                                         <div class="col-md-12">
+                                             <div class="row">
+                                                 <div class="col-md-4 col-sm-4">
+                                                     <div> 
+                                                        <img class="profile-avatar-img img-responsive" src="images/icons/chatPic.jpg"/>
+                                                        <div class="profile-avatar-address">
+                                                            <img src="images/icons/map_512x512.png" style="width:25px;" />
+                                                            <span class="">New York, 12-R, #59</span>
+                                                        </div>
+                                                     </div>
+                                                 </div>
+                                                <div class="col-md-8 col-sm-8">
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <div style="text-align: center">
+                                                                <div>
+                                                                    <img class="profile-icon-big-img " src="images/icons/phone_512x512.png" />
+                                                                </div>
+                                                                <div class="profile-big-icon-text"> Dail Call </div>
+                                                                <div class="profile-big-icon-text-num">
+                                                                    <img src="images/icons/map_512x512.png" />
+                                                                    <span class="">New York, 12-R, #59</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div style="text-align: center">
+                                                                <div>
+                                                                    <img class="profile-icon-big-img " src="images/icons/video_call_512x512.png" />
+                                                                </div>
+                                                                <div class="profile-big-icon-text"> Video Call </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div style="text-align: center">
+                                                                <div>
+                                                                    <img class="profile-icon-big-img " src="images/icons/voice_call_512x512.png" />
+                                                                </div>
+                                                                <div class="profile-big-icon-text"> Voice Call </div>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                       
+                                                
+                                                    </div>
+                                                    <div class="row">
+                                                            <div class="col-md-4">
+                                                                    <div style="text-align: center">
+                                                                        <div>
+                                                                            <img class="profile-icon-big-img " src="images/icons/chat_512x512.png" />
+                                                                        </div>
+                                                                        <div class="profile-big-icon-text"> Chat </div>
+                                                                        
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div style="text-align: center">
+                                                                        <div>
+                                                                            <img class="profile-icon-big-img " src="images/icons/share_512x512.png" />
+                                                                        </div>
+                                                                        <div class="profile-big-icon-text"> Desktop Share </div>
+                                                                       
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div style="text-align: center">
+                                                                        <div>
+                                                                            <img class="profile-icon-big-img " src="images/icons/private_call_512x512.png" />
+                                                                        </div>
+                                                                        <div class="profile-big-icon-text"> Private Call </div>
+                                                                        <div class="profile-big-icon-text-num">
+                                                                            <img src="images/icons/map_512x512.png" />
+                                                                            <span class="">New York, 12-R, #59</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                    </div>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                         <div class="col-md-12"></div>
                                      </div>
      
                                  </div>
@@ -311,229 +398,7 @@
                      </div>
                      <!-- Channel Single  -->
      
-                     <!--Channel Group Development Panel -->
-                     <div class="developmentTeam tabs standard" style="display: none;">
-                         <div class="col-md-12 left-tab" style="padding: 0px;">
-                             <div style="height:48px; background-color:#2C3A4B;  padding-top: 1px;">
-                                 <div class="col-md-6 centerTopTabLeft">
-                                     <div class="row">
-                                         <div class="col-md-12" style="padding-left: 0px; padding-right:0px;">
-                                             <span class="tabView-left-icon channel">
-                                                 <img src="images/icons/channel_512x512.png" style="width:25px;" />
-                                                 <span class="">Development Team</span>
-                                             </span>
-                                         </div>
-     
-                                     </div>
-                                 </div>
-                                 <div class="col-md-6 centerTopTabRight">
-                                     <ul class="tab-links">
-                                         <li class="" style=" line-height: 0em;">
-                                             <a href="#settings">
-                                                 <span class="tabView-left-icon channel">
-                                                     <img src="images/icons/settings_512x512.png" title="Settings" class="iconTab" />
-                                                 </span>
-                                             </a>
-                                         </li>
-                                         <li class="active" style=" line-height: 0em;">
-                                             <a href="#channel">
-                                                 <span class="tabView-left-icon channel">
-                                                     <img src="images/icons/channel_512x512.png" title="Channel" class="iconTab" />
-                                                 </span>
-                                             </a>
-                                         </li>
-                                         <li class="" style=" line-height: 0em;">
-                                             <a href="#chatTab">
-                                                 <span class="tabView-left-icon channel">
-                                                     <img src="images/icons/chat_512x512.png" title="Chat" class="iconTab" />
-                                                 </span>
-                                             </a>
-                                         </li>
-                                         <li class="" style=" line-height: 0em;">
-                                             <a href="#map">
-                                                 <span class="tabView-left-icon channel">
-                                                     <img src="images/icons/map_512x512.png" title="Map" class="iconTab" />
-                                                 </span>
-                                             </a>
-                                         </li>
-                                         <li class="" style=" line-height: 0em;">
-                                             <a href="#cameraMiddleView">
-                                                 <span class="tabView-left-icon channel">
-                                                     <img src="images/icons/camera_512x512.png" title="Camera" class="iconTab" />
-                                                 </span>
-                                             </a>
-                                         </li>
-                                     </ul>
-                                 </div>
-     
-                             </div>
-                         </div>
-     
-     
-                         <div class="col-md-12 tab-content">
-                             <div>
-                                 <div id="settings" class="tab " style="display: none;">
-                                     <!-- -->
-                                     <div class="row" style=" padding: 0px;padding-left: 4px;">
-                                         <p>Tab #1dfg content goes here!</p>
-                                     </div>
-     
-                                 </div>
-                                 <div id="channel" class="tab " style="display: block;">
-                                     <!-- Channel Pad-->
-                                     <div class="row" style=" padding: 0px;padding-left: 4px;">
-                                         <div class="col-md-4">
-                                             <div class="centerSmallBox">
-                                                 <div class="centerSmallBox2" style="background-color: #FFA800;">
-                                                     <div class="centerSmallBoxText">Server</div>
-                                                 </div>
-                                             </div>
-                                         </div>
-                                         <div class="col-md-4">
-                                             <div class="centerSmallBox">
-                                                 <div class="centerSmallBox2" style="background-color: #FFA800;">
-                                                     <div class="centerSmallBoxText">Mobile</div>
-                                                 </div>
-                                             </div>
-                                         </div>
-                                         <div class="col-md-4">
-                                             <div class="centerSmallBox">
-                                                 <div class="centerSmallBox2" style="background-color: #008E14;">
-                                                     <div class="centerSmallBoxText">Desktop</div>
-                                                 </div>
-                                             </div>
-                                         </div>
-                                         <div class="col-md-4">
-                                             <div class="centerSmallBox">
-                                                 <div class="centerSmallBox2" style="background-color: #8FB9ED;">
-                                                     <div class="centerSmallBoxText">UMS</div>
-                                                 </div>
-                                             </div>
-                                         </div>
-                                         <div class="col-md-4">
-                                             <div class="centerSmallBox">
-                                                 <div class="centerSmallBox2" style="background-color: #B7B7B7;">
-                                                     <div class="centerSmallBoxText">Daily Scrum Mgt</div>
-                                                 </div>
-                                             </div>
-                                         </div>
-                                     </div>
-     
-                                 </div>
-                                 <div id="chatTab" class="tab " style="display: none;">
-                                     <!--  -->
-                                     <div class="row" style=" padding: 0px;padding-left: 4px;">
-                                         <p>Tab #1 tretcontent goes here!</p>
-                                     </div>
-     
-                                 </div>
-                                 <div id="map" class="tab " style="display: none;">
-                                     <!--  -->
-                                     <div class="row" style=" padding: 0px;padding-left: 4px;">
-                                         <p>Tab #1 ytycontent goes here!</p>
-                                     </div>
-     
-                                 </div>
-                                 <div id="cameraMiddleView" class="tab " style="display: none;">
-                                     <!--  -->
-                                     <div class="row" style=" padding: 0px;padding-left: 4px;">
-                                         <p>Tab #1 dfgd tr content goes here!</p>
-                                     </div>
-                                 </div>
-                             </div>
-                         </div>
-                     </div>
-                     <!-- Development Panel -->
-     
-                     <!--Channel Group QA -->
-                     <div class="qaTeam tabs standard" style="display: none;">
-                         <div class="col-md-12 left-tab" style="padding: 0px;">
-                             <div style="height:48px; background-color:#2C3A4B;  padding-top: 1px;">
-                                 <div class="col-md-6 centerTopTabLeft">
-                                     <div class="row">
-                                         <div class="col-md-12" style="padding-left: 0px; padding-right:0px;">
-                                             <span class="tabView-left-icon channel">
-                                                 <img src="images/icons/channel_512x512.png" style="width:25px;" />
-                                                 <span class="">QA Team</span>
-                                             </span>
-                                         </div>
-     
-                                     </div>
-                                 </div>
-                                 <div class="col-md-6 centerTopTabRight">
-                                     <ul class="tab-links">
-                                         <li class="" style=" line-height: 0em;">
-                                             <a href="#qa1">
-                                                 <span class="tabView-left-icon channel">
-                                                     <img src="images/icons/settings_512x512.png" title="Settings" class="iconTab" />
-                                                 </span>
-                                             </a>
-                                         </li>
-                                         <li class="active" style=" line-height: 0em;">
-                                             <a href="#qa2">
-                                                 <span class="tabView-left-icon channel">
-                                                     <img src="images/icons/channel_512x512.png" title="Channel" class="iconTab" />
-                                                 </span>
-                                             </a>
-                                         </li>
-                                         <li class="" style=" line-height: 0em;">
-                                             <a href="#qa3">
-                                                 <span class="tabView-left-icon channel">
-                                                     <img src="images/icons/chat_512x512.png" title="Chat" class="iconTab" />
-                                                 </span>
-                                             </a>
-                                         </li>
-     
-                                     </ul>
-                                 </div>
-     
-                             </div>
-                         </div>
-     
-     
-                         <div class="col-md-12 tab-content">
-                             <div>
-                                 <div id="qa1" class="tab " style="display: none;">
-                                     <!-- -->
-                                     <div class="row" style=" padding: 0px;padding-left: 4px;">
-                                         <p>Tab #1dfg content goes here!</p>
-                                     </div>
-     
-                                 </div>
-                                 <div id="qa2" class="tab " style="display: block;">
-                                     <!-- Channel Pad-->
-                                     <div class="row" style=" padding: 0px;padding-left: 4px;">
-                                         <div class="col-md-4">
-                                             <div class="centerSmallBox">
-                                                 <div class="centerSmallBox2" style="background-color: #FFA800;">
-                                                     <div class="centerSmallBoxText">CloudCIC Issue</div>
-                                                 </div>
-                                             </div>
-                                         </div>
-     
-                                         <div class="col-md-4">
-                                             <div class="centerSmallBox">
-                                                 <div class="centerSmallBox2" style="background-color: #8FB9ED;">
-                                                     <div class="centerSmallBoxText">Other Issue</div>
-                                                 </div>
-                                             </div>
-                                         </div>
-     
-                                     </div>
-     
-                                 </div>
-                                 <div id="qa3" class="tab " style="display: none;">
-                                     <!--  -->
-                                     <div class="row" style=" padding: 0px;padding-left: 4px;">
-                                         <p>Tab #1 tretcontent goes here!</p>
-                                     </div>
-     
-                                 </div>
-     
-                             </div>
-                         </div>
-                     </div>
-                     <!-- QA -->
+                  
                  </div>
              </div>
      

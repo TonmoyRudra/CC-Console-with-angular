@@ -32,7 +32,7 @@ jQuery(document).ready(function() {
 	
 	// For Tab left
 	jQuery('.mainPanelLeft .tabs.standard .tab-links a').on('click', function(e)  {
-		var currentAttrValue = jQuery(this).attr('href');
+		var currentAttrValue = jQuery(this).attr('tabFor');
 
 		// Show/Hide Tabs
 		jQuery('.tabs #' + currentAttrValue).show().siblings().hide();

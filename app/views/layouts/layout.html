@@ -47,8 +47,20 @@
     <body ng-app="CicsoCloudConsole" class="">
         <div class="container-fluid">
             <div class="row">
+                <!-- Header -->
                 <div class='' ng-include src="'views/partials/header.html'"></div>
-                <div ng-view></div>
+                
+                <!-- Main Panel -->
+                <div class="col-md-12 mainPanel" style="padding: 0px;">
+                    <div class="row " style="background-color:#2C3A4B;">
+                        <!-- Left Panel -->
+                        <div class='' ng-include src="'views/partials/leftPanel.html'"></div>
+                        <!-- Ng View - Main Center & Main Right -->
+                        <div ng-view></div>
+                    </div>
+                </div>
+                
+                <!-- footer -->
                 <div class='' ng-include src="'views/partials/footer.html'"></div>
             </div>
         </div>
