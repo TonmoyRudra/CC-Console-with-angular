@@ -1,81 +1,82 @@
 <script src="../../scripts/scripts.js" type="text/javascript"></script>
  <!-- Main Left -->
- <div class="col-md-2 mainPanelLeft" style="padding-right: 0px;">
+ <div class="col-md-2 col-sm-2 mainPanelLeft" style="padding-right: 0px;">
     <div class="mainPanelLeft" style=" background-color:#445366;">
         <div class="tabs standard ">
-            <div class="col-md-12 left-tab" style="padding: 0px;">
+            <div class="col-md-12 col-sm-12 left-tab" style="padding: 0px;">
                 <div style="height:48px; background-color:#2C3A4B;  padding-top: 1px;">
-                    <ul class="tab-links">
-                        <li class="active" style=" line-height: 0em;">
-                            <a tabFor="channels"  href="#/channel">
+                    <ul class="tab-links row "  ng-controller="CommonCtrl" style="margin-right:0px;" >
+                        <li class="active col-md-3 col-sm-3 col-xs-3"  ng-click="loadSegment('channel')" style=" line-height: 0em;">
+                            <a tabFor="channels" >
                                 <span class="tabView-left-icon channel">
-                                    <img src="images/icons/channel_group_512x512.png" class="iconTab" />
+                                    <img src="images/icons/channel_group_512x512.png" class="iconTab " />
                                     <span class="tabText activeTabText" id="channel-lefttab">Channels</span>
                                 </span>
                             </a>
                         </li>
-                        <li class="" style=" line-height: 0em;">
-                            <a tabFor="user" href="#/user">
+                        <li class="col-md-3 col-sm-3 col-xs-3"  ng-click="loadSegment('user')" style=" line-height: 0em;">
+                            <a tabFor="user" >
                                 <span class="tabView-left-icon user">
                                     <img src="images/icons/user_512x512.png" class="iconTab" />
                                     <span class="tabText inactiveTabText" id="user-lefttab">Users</span>
                                 </span>
                             </a>
                         </li>
-                        <li class="" style=" line-height: 0em;">
-                            <a tabFor="alerts" href="#/alerts">
+                        <li class="col-md-3 col-sm-3 col-xs-3"  ng-click="loadSegment('alert')" style=" line-height: 0em;">
+                            <a tabFor="alerts" >
                                 <span class="tabView-left-icon alerts">
-                                    <img src="images/icons/alert_512x512.png" class="iconTab" />
+                                    <img src="images/icons/alert_512x512.png" class="iconTab " />
                                     <span class="tabText inactiveTabText" id="alert-lefttab">Alert</span>
 
                                 </span>
                             </a>
                         </li>
-                        <li class="" style=" line-height: 0em;">
-                            <a tabFor="camera" href="#/camera">
+                        <li class="col-md-3 col-sm-3 col-xs-3"  ng-click="loadSegment('camera')" style=" line-height: 0em;">
+                            <a tabFor="camera" >
                                 <span class="tabView-left-icon camera">
-                                    <img src="images/icons/camera_512x512.png" class="iconTab" />
+                                    <img src="images/icons/camera_512x512.png" class="iconTab " />
                                     <span class="tabText inactiveTabText" id="camera-lefttab">Camera</span>
 
                                 </span>
                             </a>
                         </li>
+                        
                     </ul>
                 </div>
             </div>
 
 
-            <div class="col-md-12 tab-content">
+            <div class="col-md-12 col-sm-12 tab-content">
                 <div id="channels" class="tab " style="display: block;">
                     <!-- search box Left -->
-                    <div class="row" style=" padding: 0px;padding-left: 4px;">
-                        <div class="col-md-8" style="padding:0px;">
+                    <div class="row search" style=" padding: 0px;padding-left: 4px;">
+                        <div class="col-md-8 col-sm-6" style="padding:0px;">
                             <div>
                                 <input type="text" name="" placeholder="Search" style="width:100%; background-color: #677587;color:#445366;">
                             </div>
                         </div>
-                        <div class="col-md-2" style="padding-left: 5px;">
+                        <div class="col-md-2 col-sm-3" style="padding-left: 5px;">
                             <span class="tabView-left-icon channel">
-                                <img src="images/icons/search_512x512.png" class="" style="width:25px;" />
+                                <img src="images/icons/search_512x512.png" class="" />
                             </span>
                         </div>
-                        <div class="col-md-2" style="padding-left: 0px;">
+                        <div class="col-md-2 col-sm-3" style="padding-left: 0px;">
                             <span class="tabView-left-icon channel">
-                                <img src="images/icons/plus_512x512.png" class="" style="width:32px;" />
+                                <img src="images/icons/plus_512x512.png" class="" style="width:30px;" />
                             </span>
                         </div>
                     </div>
                     <!-- Bellow Search Box Left -->
                     <div class="row" style="padding-top: 15px;">
-                        <div class="col-md-12 mainTab" style="padding-left:5px; cursor: pointer;">
+                        <div class="col-md-12 col-sm-12 mainTab" style="padding-left:5px; cursor: pointer;">
                             <div class="mainTabRow">
                                 <div class="row " style="padding-top: 7px; ">
-                                    <div class="col-md-2">
+                                    <div class="col-md-2 col-sm-3">
                                         <span class="tabView-left-icon channel">
-                                            <img src="images/icons/channel_512x512.png" style="width:25px;" />
+                                            <img src="images/icons/channel_512x512.png"  />
                                         </span>
                                     </div>
-                                    <div class="col-md-10  tab-list-text ">
+                                    <div class="col-md-10 col-sm-9  tab-list-text">
                                         <span class="">Announcements</span>
                                         
                                     </div>
@@ -83,7 +84,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-12 mainTab" style="padding-left:5px;">
+                        <div class="col-md-12 col-sm-12 mainTab" style="padding-left:5px;">
                             <div class="row mainTabRow" style="padding-left: 15px;padding-top: 5px;">
                                 <input id="toggleDevelopment" class="toggleButton" type="checkbox">
                                 <div class="toggleGroupColor">
@@ -91,59 +92,59 @@
                                 </div>
                                 <div id="expandDevelopment">
                                     <div class="row" style="padding-top: 7px; margin-right:0px; ">
-                                        <div class="col-md-2 col-sm-2">
+                                        <div class="col-md-2 col-sm-3">
                                             <span class="tabView-left-icon channel">
-                                                <img src="images/icons/channel_512x512.png" style="width:25px;" />
+                                                <img src="images/icons/channel_512x512.png"  />
                                             </span>
                                         </div>
-                                        <div class="col-md-10 col-sm-10 tab-list-text ">
+                                        <div class="col-md-10 col-sm-9 tab-list-text ">
                                             <span class="">Server</span>
                                         </div>
                                     </div>
                                     <div class="row" style="padding-top: 7px; margin-right:0px;">
-                                        <div class="col-md-2">
+                                        <div class="col-md-2 col-sm-3">
                                             <span class="tabView-left-icon channel">
-                                                <img src="images/icons/channel_512x512.png" style="width:25px;" />
+                                                <img src="images/icons/channel_512x512.png"  />
                                             </span>
                                         </div>
-                                        <div class="col-md-10  tab-list-text">
+                                        <div class="col-md-10  col-sm-9 tab-list-text">
                                             <span class="">Mobile</span>
                                         </div>
                                     </div>
                                     <div class="row" style="padding-top: 7px; margin-right:0px;">
-                                        <div class="col-md-2">
+                                        <div class="col-md-2 col-sm-3">
                                             <span class="tabView-left-icon channel">
-                                                <img src="images/icons/channel_512x512.png" style="width:25px;" />
+                                                <img src="images/icons/channel_512x512.png" />
                                             </span>
                                         </div>
-                                        <div class="col-md-10  tab-list-text">
+                                        <div class="col-md-10  col-sm-9 tab-list-text">
                                             <span class="">Desktop</span>
                                         </div>
                                     </div>
                                     <div class="row" style="padding-top: 7px; margin-right:0px;">
-                                        <div class="col-md-2">
+                                        <div class="col-md-2 col-sm-3">
                                             <span class="tabView-left-icon channel">
-                                                <img src="images/icons/channel_512x512.png" style="width:25px;" />
+                                                <img src="images/icons/channel_512x512.png"  />
                                             </span>
                                         </div>
-                                        <div class="col-md-10  tab-list-text">
+                                        <div class="col-md-10  col-sm-9 tab-list-text">
                                             <span class="">UMS</span>
                                         </div>
                                     </div>
                                     <div class="row" style="padding-top: 7px; margin-right:0px;">
-                                        <div class="col-md-2">
+                                        <div class="col-md-2 col-sm-3">
                                             <span class="tabView-left-icon channel">
-                                                <img src="images/icons/meeting_512x512.png" style="width:25px;" />
+                                                <img src="images/icons/meeting_512x512.png"  />
                                             </span>
                                         </div>
-                                        <div class="col-md-10  tab-list-text">
+                                        <div class="col-md-10  col-sm-9 tab-list-text">
                                             <span class="">Daily Scrum Mgt</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-12 mainTab" style="padding-left:5px;">
+                        <div class="col-md-12 col-sm-12 mainTab" style="padding-left:5px;">
                             <div class="row mainTabRow" style="padding-left: 15px;padding-top: 5px;">
                                 <input id="toggleQATeam" class="toggleButton" type="checkbox">
                                 <div class="toggleGroupColor">
@@ -151,22 +152,22 @@
                                 </div>
                                 <div id="expandQATeam">
                                     <div class="row" style="padding-top: 7px; margin-right:0px;">
-                                        <div class="col-md-2">
+                                        <div class="col-md-2 col-sm-3">
                                             <span class="tabView-left-icon channel">
-                                                <img src="images/icons/channel_512x512.png" style="width:25px;" />
+                                                <img src="images/icons/channel_512x512.png" />
                                             </span>
                                         </div>
-                                        <div class="col-md-10  tab-list-text">
+                                        <div class="col-md-10 col-sm-9  tab-list-text">
                                             <span class="">CloudCIC Issues</span>
                                         </div>
                                     </div>
                                     <div class="row" style="padding-top: 7px; margin-right:0px;">
-                                        <div class="col-md-2">
+                                        <div class="col-md-2 col-sm-3">
                                             <span class="tabView-left-icon channel">
-                                                <img src="images/icons/channel_512x512.png" style="width:25px;" />
+                                                <img src="images/icons/channel_512x512.png" />
                                             </span>
                                         </div>
-                                        <div class="col-md-10  tab-list-text">
+                                        <div class="col-md-10 col-sm-9 tab-list-text">
                                             <span class="">Other Issues</span>
                                         </div>
                                     </div>
@@ -181,20 +182,20 @@
 
                 <div id="user" class="tab" style="display: none;">
                     <!-- search box Left -->
-                    <div class="row" style=" padding: 0px;padding-left: 4px;">
-                        <div class="col-md-8" style="padding:0px;">
+                    <div class="row search" style=" padding: 0px;padding-left: 4px;">
+                        <div class="col-md-8 col-sm-6" style="padding:0px;">
                             <div>
                                 <input type="text" name="" placeholder="Search" style="width:100%; background-color: #677587;color:#445366;">
                             </div>
                         </div>
-                        <div class="col-md-2" style="padding-left: 5px;">
+                        <div class="col-md-2 col-sm-3" style="padding-left: 5px;">
                             <span class="tabView-left-icon channel">
-                                <img src="images/icons/search_512x512.png" class="" style="width:25px;" />
+                                <img src="images/icons/search_512x512.png" class="" />
                             </span>
                         </div>
-                        <div class="col-md-2" style="padding-left: 0px;">
+                        <div class="col-md-2 col-sm-3" style="padding-left: 0px;">
                             <span class="tabView-left-icon channel">
-                                <img src="images/icons/plus_512x512.png" class="" style="width:32px;" />
+                                <img src="images/icons/plus_512x512.png" class="" style="width:30px;" />
                             </span>
                         </div>
                     </div>
@@ -206,34 +207,33 @@
 
                                 <input id="toggleServerDev" class="toggleButton" type="checkbox">
                                 <div class="toggleGroupColor">
-                                    <label for="toggleServerDev" class="toggleButtonText tab-list-text">QA Team</label>
+                                    <label for="toggleServerDev" class="toggleButtonText tab-list-text">SERVER Team</label>
                                 </div>
 
-                                <div id="expandServerDev" class="expand">
-                                    <div class="row" style="padding-top: 7px; margin-right:0px;margin-left:0px;">
-                                        <div class="col-md-2" style="padding-left: 0px; padding-right: 0px;">
+                                <div id="expandServerDev" class="expand memberList">
+                                    <div class="row" style="padding-top: 7px; margin-left: 0px;">
+                                        <div class="col-md-2 col-sm-2" style="padding-left: 0px; padding-right: 0px;">
                                             <div>
-                                                <img src="images/icons/green_halo_512x512.png" class="member-icon" />
-                                                <img class="member-img img-circle" src="images/icons/chatPic.jpg" />
+                                                <img class="member-img img-circle greenBorder" src="images/icons/chatPic.jpg" />
                                             </div>
                                         </div>
-                                        <div class="col-md-10 tab-list-text" style="padding-left: 6px;">
+                                        <div class="col-md-10 col-sm-10 tab-list-text" style="padding-left: 6px;">
                                             <span class="member-name">Jhon Glesky</span>
                                             <br/>
                                             <p class="member-status">Available</p>
                                         </div>
                                     </div>
-                                    <div class="row" style="padding-top: 7px; margin-right:0px;margin-left:0px;">
-                                        <div class="col-md-2" style="padding-left: 0px; padding-right: 0px;">
+                                    <div class="row" style="padding-top: 7px; margin-left: 0px;">
+                                        <div class="col-md-2 col-sm-2" style="padding-left: 0px; padding-right: 0px;">
                                             <div>
-                                                <img src="images/icons/green_halo_512x512.png" class="member-icon" />
-                                                <img class="member-img img-circle" src="images/icons/chatPic.jpg" />
+                                
+                                                <img class="member-img img-circle redBorder" src="images/icons/chatPic.jpg" />
                                             </div>
                                         </div>
-                                        <div class="col-md-10 tab-list-text" style="padding-left: 6px;">
+                                        <div class="col-md-10 col-sm-10 tab-list-text" style="padding-left: 6px;">
                                             <span class="member-name">Jhon Glesky</span>
                                             <br/>
-                                            <p class="member-status">Available</p>
+                                            <p class="member-status">Busy</p>
                                         </div>
                                     </div>
                                 </div>

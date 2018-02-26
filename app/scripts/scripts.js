@@ -13,7 +13,8 @@ jQuery(document).ready(function() {
 	var mainPanelCenterWidth = $(".mainPanelCenter").width();
 	$(".chat-content-div").css("width", mainPanelCenterWidth -(mainPanelCenterWidth/2))
 	 
-
+	$(".chatBoxMain ul").scrollTop(function() { return this.scrollHeight; });
+	
 	
 
 	//for status chage color
@@ -86,7 +87,6 @@ jQuery(document).ready(function() {
 		// to show chat box and hidden all
 		// $(".mainPanelCenter .tabs").css("display","none")
 		// $(".channelSingle").css("display","block");
-		// $(".chatBoxMain ul").scrollTop(function() { return this.scrollHeight; });
 	});
 
 	jQuery('.toggleButtonText').on('click', function(e)  {

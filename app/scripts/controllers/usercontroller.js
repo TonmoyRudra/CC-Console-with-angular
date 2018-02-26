@@ -21,5 +21,5 @@ function UserCtrl($scope, $http, $location) {
 
         
     // }
-
+    // alert("hi i am UserCtrl")
 }

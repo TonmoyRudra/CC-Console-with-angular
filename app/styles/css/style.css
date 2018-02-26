@@ -13,7 +13,6 @@ li{
 	color:white;
 	width: 32px;
 	/* height: 32px; */
-	max-width: 100%;
     height: auto;
 	
 }
@@ -22,7 +21,6 @@ li{
 	color:white;
 	width: 25px;
 	/* height: 32px; */
-	max-width: 100%;
     height: auto;
 	
 }
@@ -32,6 +30,9 @@ li{
     width: 26px;
     height: 26px;
     top: 3px;
+}
+.tab-content img{
+	width: 22px;
 }
 .header-left-icon{
 	
@@ -76,7 +77,9 @@ li{
 	color: white; 
 }
 
-
+.tab-links {
+	
+}
 .tab-list-text{
 	font-size: 13px;
 	cursor: pointer;
@@ -323,7 +326,7 @@ label::before {
 }
 .member-icon{
 	color: white;
-    max-width: 100%;
+	width: 32px;
     height: auto;
 
 }
@@ -339,7 +342,18 @@ label::before {
 .memberList ul li{
 	cursor: pointer;
 }
+.memberList  img{
+	width: 30px;
+    height: 30px;
+}
 
+
+.greenBorder{
+	border:2px solid green;
+}
+.redBorder{
+	border:2px solid red;
+}
 .profile-top-img-green{
 	width: 25px;
     border: 2px solid #17f500;
@@ -388,3 +402,93 @@ label::before {
 	font-size: 12px;
 }
 
+.profile-2nd-row li{
+	padding-top: 5px;
+}
+
+
+
+/*==================================================
+=                        Media Queries             =
+==================================================*/
+
+    /*==========  Mobile First Method  ==========*/
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (min-width : 320px) {
+
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (min-width : 480px) {
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+		.tab-content img{
+			width: 20px;
+		}
+
+		.memberList  img{
+			width: 20px;
+			height: 20px;
+		}
+
+		
+		.member-name{
+			font-size: 12px
+		}
+		
+		.member-status{
+			font-size: 8px;
+		}
+		.tab-list-text span{
+			font-size: 10px;
+		}
+
+		.toggleButtonText{
+			font-size:12px;
+		}
+
+		.tabText{
+			display: none;
+		}
+    }	
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+
+    }
+
+    /*==========  Non-Mobile First Method  ==========*/
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+
+    }
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (max-width : 320px) {
+
+    }

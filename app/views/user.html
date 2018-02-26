@@ -21,7 +21,7 @@
  <div class="mainBody">
  
          <!-- Main Center -->
-         <div class="col-md-8 mainPanelCenter">
+         <div class="col-md-8 col-sm-8 mainPanelCenter">
              <div class="mainPanelCenter" style=" background-color:#677587;">
                  <div class="col-md-12 left-tab" style="padding: 0px;">
                      <!-- Default Panel -->
@@ -464,7 +464,7 @@
          </div>
  
          <!-- Main Right -->
-         <div class="col-md-2 mainPanelRight" style="padding-left: 0px;">
+         <div class="col-md-2 col-sm-2 mainPanelRight" style="padding-left: 0px;">
              <div class="mainPanelRight" style=" background-color:#445366;">
                  <div class="tabs standard ">
                      <div class="col-md-12 left-tab" style="padding: 0px;">
@@ -494,87 +494,84 @@
      
                      <div class="col-md-12 tab-content">
                          <div id="member" class="tab " style="display: block;">
-                             <!-- search box -->
-                             <div class="row" style=" padding: 0px;padding-left: 4px;">
-                                 <div class="col-md-8" style="padding:0px;">
-                                     <div>
-                                         <input type="text" name="" placeholder="Search" style="width:100%; color:white; background-color: #677587;color:#445366;">
-                                     </div>
-                                 </div>
-                                 <div class="col-md-2" style="padding-left: 5px;">
-                                     <span class="tabView-left-icon channel">
-                                         <img src="images/icons/search_512x512.png" class="" style="width:25px;" />
-                                     </span>
-                                 </div>
-                                 <div class="col-md-2" style="padding-left: 0px;">
-                                     <span class="tabView-left-icon channel">
-                                         <img src="images/icons/plus_512x512.png" class="" style="width:32px;" />
-                                     </span>
-                                 </div>
-                             </div>
+                             <!-- search box Left -->
+                    <div class="row search" style=" padding: 0px;padding-left: 4px;">
+                            <div class="col-md-8 col-sm-6" style="padding:0px;">
+                                <div>
+                                    <input type="text" name="" placeholder="Search" style="width:100%; background-color: #677587;color:#445366;">
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-3" style="padding-left: 5px;">
+                                <span class="tabView-left-icon channel">
+                                    <img src="images/icons/search_512x512.png" class="" />
+                                </span>
+                            </div>
+                            <div class="col-md-2 col-sm-3" style="padding-left: 0px;">
+                                <span class="tabView-left-icon channel">
+                                    <img src="images/icons/plus_512x512.png" class="" style="width:30px;" />
+                                </span>
+                            </div>
+                        </div>
      
                              <div class="row memberList">
                                  <ul>
                                      <li class="col-md-12">
                                          <div class="row" style="padding-left: 7px; padding-top: 5px;">
-                                             <div class="col-md-2" style="padding-left: 0px; padding-right: 0px;">
-                                                 <div>
-                                                     <img src="images/icons/green_halo_512x512.png" class="member-icon" />
-                                                     <img class="member-img img-circle" src="images/icons/chatPic.jpg" />
-                                                 </div>
-                                             </div>
-                                             <div class="col-md-10" style="padding-left: 6px;">
-                                                 <span class="member-name">Jhon Glesky</span>
-                                                 <br/>
-                                                 <p class="member-status">Available</p>
-                                             </div>
+                                                <div class="col-md-2 col-sm-2" style="padding-left: 0px; padding-right: 0px;">
+                                                        <div>
+                                                            <img class="member-img img-circle greenBorder" src="images/icons/chatPic.jpg" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-10 col-sm-10 tab-list-text" style="padding-left: 6px;">
+                                                        <span class="member-name">Jhon Glesky</span>
+                                                        <br/>
+                                                        <p class="member-status">Available</p>
+                                                    </div>
                                          </div>
                                      </li>
                                      <li class="col-md-12">
-                                         <div class="row" style="padding-left: 7px; padding-top: 5px;">
-                                             <div class="col-md-2" style="padding-left: 0px; padding-right: 0px;">
-                                                 <div>
-                                                     <img src="images/icons/green_halo_512x512.png" class="member-icon" />
-                                                     <img class="member-img img-circle" src="images/icons/chatPic.jpg" />
-                                                 </div>
-                                             </div>
-                                             <div class="col-md-10" style="padding-left: 6px;">
-                                                 <span class="member-name">Jhon Glesky</span>
-                                                 <br/>
-                                                 <p class="member-status">Available</p>
-                                             </div>
-                                         </div>
-                                     </li>
-                                     <li class="col-md-12">
-                                         <div class="row" style="padding-left: 7px; padding-top: 5px;">
-                                             <div class="col-md-2" style="padding-left: 0px; padding-right: 0px;">
-                                                 <div>
-                                                     <!-- <img src="images/icons/green_halo_512x512.png" class="member-icon" /> -->
-                                                     <img class="member-img img-circle" src="images/icons/chatPic.jpg" />
-                                                 </div>
-                                             </div>
-                                             <div class="col-md-10" style="padding-left: 6px;">
-                                                 <span class="member-name">Jhon Glesky</span>
-                                                 <br/>
-                                                 <p class="member-status">Offline</p>
-                                             </div>
-                                         </div>
-                                     </li>
-                                     <li class="col-md-12">
-                                         <div class="row" style="padding-left: 7px; padding-top: 5px;">
-                                             <div class="col-md-2" style="padding-left: 0px; padding-right: 0px;">
-                                                 <div>
-                                                     <img src="images/icons/red_halo_512x512.png" class="member-icon" />
-                                                     <img class="member-img img-circle" src="images/icons/chatPic.jpg" />
-                                                 </div>
-                                             </div>
-                                             <div class="col-md-10" style="padding-left: 6px;">
-                                                 <span class="member-name">Jhon Glesky</span>
-                                                 <br/>
-                                                 <p class="member-status">Busy</p>
-                                             </div>
-                                         </div>
-                                     </li>
+                                            <div class="row" style="padding-left: 7px; padding-top: 5px;">
+                                                   <div class="col-md-2 col-sm-2" style="padding-left: 0px; padding-right: 0px;">
+                                                           <div>
+                                                               <img class="member-img img-circle redBorder" src="images/icons/chatPic.jpg" />
+                                                           </div>
+                                                       </div>
+                                                       <div class="col-md-10 col-sm-10 tab-list-text" style="padding-left: 6px;">
+                                                           <span class="member-name">Jhon Glesky</span>
+                                                           <br/>
+                                                           <p class="member-status">Busy</p>
+                                                       </div>
+                                            </div>
+                                        </li>
+                                        <li class="col-md-12">
+                                                <div class="row" style="padding-left: 7px; padding-top: 5px;">
+                                                       <div class="col-md-2 col-sm-2" style="padding-left: 0px; padding-right: 0px;">
+                                                               <div>
+                                                                   <img class="member-img img-circle redBorder" src="images/icons/chatPic.jpg" />
+                                                               </div>
+                                                           </div>
+                                                           <div class="col-md-10 col-sm-10 tab-list-text" style="padding-left: 6px;">
+                                                               <span class="member-name">Jhon Glesky</span>
+                                                               <br/>
+                                                               <p class="member-status">Busy</p>
+                                                           </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-md-12">
+                                                    <div class="row" style="padding-left: 7px; padding-top: 5px;">
+                                                           <div class="col-md-2 col-sm-2" style="padding-left: 0px; padding-right: 0px;">
+                                                                   <div>
+                                                                       <img class="member-img img-circle greenBorder" src="images/icons/chatPic.jpg" />
+                                                                   </div>
+                                                               </div>
+                                                               <div class="col-md-10 col-sm-10 tab-list-text" style="padding-left: 6px;">
+                                                                   <span class="member-name">Jhon Glesky</span>
+                                                                   <br/>
+                                                                   <p class="member-status">Available</p>
+                                                               </div>
+                                                    </div>
+                                                </li>
+                                     
                                  </ul>
                              </div>
                          </div>

@@ -10,8 +10,8 @@
  * Main module of the application.
  */
 var ciscoCloudConsoleApp = angular.module('CicsoCloudConsole', ['ngRoute']);
-ciscoCloudConsoleApp.config(function ($routeProvider) {
 
+ciscoCloudConsoleApp.config(function ($routeProvider) {
     $routeProvider
         .when('/channel', {
             templateUrl: 'views/channel.html',
@@ -23,17 +23,16 @@ ciscoCloudConsoleApp.config(function ($routeProvider) {
             templateUrl: 'views/user.html',
             controller: 'UserCtrl',
             caseInsensitiveMatch: true,
-
         })
         .when('/alert', {
-            templateUrl: 'views/channel.html',
-            controller: 'ChannelCtrl',
+            templateUrl: 'views/alert.html',
+            controller: 'AlertCtrl',
             caseInsensitiveMatch: true,
 
         })
         .when('/camera', {
-            templateUrl: 'views/channel.html',
-            controller: 'ChannelCtrl',
+            templateUrl: 'views/camera.html',
+            controller: 'CameraCtrl',
             caseInsensitiveMatch: true,
 
         })

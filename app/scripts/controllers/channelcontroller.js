@@ -21,5 +21,5 @@ function ChannelCtrl($scope, $http, $location) {
 
         
     // }
-
+// alert("hi i am channelCtrl")
 }

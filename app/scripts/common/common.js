@@ -34,3 +34,13 @@ const loadHeader = false;
 
 const defUserImage = "/images/defaultuser.jpg";
 const checkSession = chkS;
+
+
+///////////Common
+angular.module('CicsoCloudConsole').controller('CommonCtrl', ['$scope', '$http', '$location', CommonCtrl]);
+function CommonCtrl($scope,$http,$location) {
+    $scope.loadSegment=function(segment){
+        $location.path('/'+segment)
+    }
+}
+///////////////////
