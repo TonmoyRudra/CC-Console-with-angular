@@ -65,7 +65,7 @@ jQuery(document).ready(function() {
 		e.preventDefault();
 	});
 
-	jQuery('#channel .tab-list-text ').on('click', function(e)  {
+	jQuery('#channels .tab-list-text ').on('click', function(e)  {
 		jQuery('.mainTabRow .row').removeClass('tab-list-active')
 		jQuery(".toggleButtonText").parent('div').removeClass('tab-list-active');
 		jQuery(".toggleButtonText").parent('div').addClass('toggleGroupColor');

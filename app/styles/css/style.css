@@ -375,3 +375,16 @@ label::before {
 .profile-big-icon-text-num img{
 	width: 15px;
 }
+.profile-2nd-row .head-text{
+	font-size: 15px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+.profile-2nd-row img{
+	width:20px;
+}
+
+.profile-2nd-row span{
+	font-size: 12px;
+}
+
