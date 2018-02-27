@@ -40,7 +40,7 @@ h2 {
 	/* width: 100%; */
 	display: inline-block;
 	/* border-radius: 3px 3px 0px 0px; */
-	background: #2c3a4b;
+	/* background: #2c3a4b; */
 	/* font-size: 16px; */
 	/* font-weight: 600; */
 	color: #4c4c4c;
@@ -62,7 +62,7 @@ li.active a, li.active a:hover {
 	padding:15px;
 	border-radius:3px;
 	/* box-shadow:-1px 1px 1px rgba(0,0,0,0.15); */
-	background: #445366;
+	/* background: #445366; */
 	color: white;
 }
 

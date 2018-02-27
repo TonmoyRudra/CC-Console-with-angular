@@ -9,12 +9,12 @@ jQuery(document).ready(function() {
 	var mainPanelHeight =  $(".mainPanel").height();
 	$(".chatBoxMain").css("height" , mainPanelHeight -75);
 	$(".chatBoxMain ul").css("max-height" , mainPanelHeight -120);
-	
+	$(".tab-content").css("height",mainPanelHeight -58 )
 	var mainPanelCenterWidth = $(".mainPanelCenter").width();
-	$(".chat-content-div").css("width", mainPanelCenterWidth -(mainPanelCenterWidth/2))
+	$(".chat-content-div").css("width", mainPanelCenterWidth - 50)
 	 
 	$(".chatBoxMain ul").scrollTop(function() { return this.scrollHeight; });
-	
+	$(".img-responsive").css("display","inline");
 	
 
 	//for status chage color
@@ -47,9 +47,9 @@ jQuery(document).ready(function() {
 	});
 	// for tab right
 	jQuery('.mainPanelRight .tabs.standard .tab-links a').on('click', function(e)  {
-		var currentAttrValue = jQuery(this).attr('href');
+		var currentAttrValue = jQuery(this).attr('tabFor');
 		// Show/Hide Tabs
-		jQuery('.tabs ' + currentAttrValue).show().siblings().hide();
+		jQuery('.tabs #' + currentAttrValue).show().siblings().hide();
 		// Change/remove current tab to active
 		jQuery(this).parent('li').addClass('active').siblings().removeClass('active');
 		
@@ -57,9 +57,9 @@ jQuery(document).ready(function() {
 	});
 	//for tab middle
 	jQuery('.mainPanelCenter .tabs.standard .tab-links a').on('click', function(e)  {
-		var currentAttrValue = jQuery(this).attr('href');
+		var currentAttrValue = jQuery(this).attr('tabFor');
 		// Show/Hide Tabs
-		jQuery('.tabs ' + currentAttrValue).show().siblings().hide();
+		jQuery('.tabs #' + currentAttrValue).show().siblings().hide();
 		// Change/remove current tab to active
 		jQuery(this).parent('li').addClass('active').siblings().removeClass('active');
 		
@@ -85,8 +85,8 @@ jQuery(document).ready(function() {
 		jQuery(this).parent('.mainTabRow .row').addClass('tab-list-active').siblings().removeClass('tab-list-active');
 		
 		// to show chat box and hidden all
-		// $(".mainPanelCenter .tabs").css("display","none")
-		// $(".channelSingle").css("display","block");
+		$(".mainPanelCenter .tabs").css("display","none")
+		$(".channelSingle").css("display","block");
 	});
 
 	jQuery('.toggleButtonText').on('click', function(e)  {
@@ -103,7 +103,7 @@ jQuery(document).ready(function() {
 		}
 		else if(toggleButtonName == "toggleQATeam"){
 			$(".mainPanelCenter .tabs").css("display","none")
-			$(".qaTeam").css("display","block")
+			$(".developmentTeam").css("display","block")
 		}
 		else {
 			$(".mainPanelCenter .tabs").css("display","none")

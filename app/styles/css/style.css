@@ -9,6 +9,7 @@ body{
 li{
 	list-style-type:none;
 }
+
 .icon {
 	color:white;
 	width: 32px;
@@ -30,6 +31,10 @@ li{
     width: 26px;
     height: 26px;
     top: 3px;
+}
+.tab-content{
+	overflow-y: auto;
+	overflow-x: hidden;
 }
 .tab-content img{
 	width: 22px;
@@ -65,7 +70,7 @@ li{
 }
 
 .activeTabText{
-	display: show;
+	display: inline-block !important;
 }
 
 .inactiveTabText{
@@ -75,6 +80,7 @@ li{
 .tabText{
 	font-size: 10px;
 	color: white; 
+	display: none
 }
 
 .tab-links {
@@ -215,12 +221,11 @@ label::before {
 	margin-bottom: 20px;
 }
 .centerSmallBox2 {
-	height: 50px;
 	padding: 15px;
 }
 .centerSmallBoxText{
 	color:black;
-	font-size: 16px;
+	font-size: 13px;
 	font-weight: 999;
 }
 
@@ -240,7 +245,7 @@ label::before {
 .chatBoxMain{
 
     /* height: 450px; */
-    overflow: hidden;
+    /* overflow: hidden; */
     padding: 0;
 }
 
@@ -304,8 +309,8 @@ label::before {
     font-weight: bold;
 }
 
-.chat-content-div{
-	padding-left: 0px;
+.chat-content{
+	
 	background-color: #8FB9ED;
 	color: #374454;
 }
@@ -347,36 +352,42 @@ label::before {
     height: 30px;
 }
 
-
 .greenBorder{
 	border:2px solid green;
 }
 .redBorder{
 	border:2px solid red;
 }
-.profile-top-img-green{
+.profile-header img{
 	width: 25px;
-    border: 2px solid #17f500;
+    
 }
 
-.profile-top-img-red{
-	width: 25px;
-    border: 2px solid red0;
+.profile-header span{
+	font-size: 15px;
+    
 }
-
-.profile-avatar-img{
-	max-width: 250px;
+.profile-header .status{
+	font-size: 10px;
+	
+}
+.avilable{
+	color:#00F500;
+}
+.tab-content .profile-avatar-img{
+	width: 250px;
 }
 
 .profile-avatar-address{
 	padding-top: 6px;
-    font-size: 12px;
 	color: black;
 	font-weight: bold;
 }
-
-.profile-icon-big-img{
-	max-width: 75px;
+.profile-avatar-address span{
+    font-size: 12px;
+}
+.tab-content  .profile-icon-big-img{
+	width: 75px;
 }
 .profile-big-icon-text{
 	font-size: 18px;
@@ -434,7 +445,6 @@ label::before {
 			width: 20px;
 			height: 20px;
 		}
-
 		
 		.member-name{
 			font-size: 12px
@@ -454,6 +464,81 @@ label::before {
 		.tabText{
 			display: none;
 		}
+		.profile-header img{
+			width: 25px;
+			
+		}
+		
+		.profile-header span{
+			font-size: 9px;
+			
+		}
+		.profile-header  .status{
+			font-size: 6px;
+			
+		}
+		.profile-avatar-address img{
+			width:15px;
+		}
+		.profile-avatar-address span{
+			font-size: 8px;
+		}
+		.profile-big-icon-text-num img{
+			width: 15px;
+		}
+
+		.profile-avatar{
+			text-align: center;
+    		padding-bottom: 10px;
+		}
+		.profile-avatar .profile-avatar-img  {
+			width: 40%;
+		}
+
+		.profile-big-icon-text{
+			font-size: 13px;
+			padding-top: 5px;
+		}
+		.profile-big-icon-text-num span{
+			font-size: 8px;
+		}
+
+		.profile-2nd-row .head-text{
+			font-size: 12px;
+			/* font-weight: bold; */
+			padding-bottom: 2px;
+		}
+		.profile-2nd-row img{
+			width:15px;
+		}
+		
+		.profile-2nd-row span{
+			font-size: 11px;
+		}
+		.centerSmallBoxText {
+			font-size: 10px;
+		}
+		.chat-user-name{
+			
+			font-size: 12px;
+			
+		}
+		.chat-time{
+			
+			font-size: 10px;
+			
+		}
+		
+		.chat-content{
+			font-size: 12px;
+			margin-left: -6px;
+			text-align: justify;
+			line-height: initial;
+		}
+		.avatar img {
+			width:30px;
+		}
+				
     }	
 
     /* Medium Devices, Desktops */

@@ -36,5 +36,5 @@ ciscoCloudConsoleApp.config(function ($routeProvider) {
             caseInsensitiveMatch: true,
 
         })
-        .otherwise('/');
+        .otherwise('/channel');
 });

@@ -38,9 +38,50 @@ const checkSession = chkS;
 
 ///////////Common
 angular.module('CicsoCloudConsole').controller('CommonCtrl', ['$scope', '$http', '$location', CommonCtrl]);
-function CommonCtrl($scope,$http,$location) {
-    $scope.loadSegment=function(segment){
-        $location.path('/'+segment)
+function CommonCtrl($scope, $http, $location) {
+    $scope.loadSegment = function (segment, ref) {
+        $(".mainPanelLeft .tabText").removeClass("activeTabText");
+        $(ref.target).closest('span').children("span.tabText").addClass("activeTabText");
+        $location.path('/' + segment)
     }
+
+    $scope.loadSegmentForRight = function (ref) {
+        $(".mainPanelRight .tabText").removeClass("activeTabText");
+        $(ref.target).closest('span').children("span.tabText").addClass("activeTabText");
+       
+    }
+
+    var url = window.location.href;
+    var params = url.split('#/');
+    // var params = url.includes('#/');
+    if(params[1]=="channel"){
+        $('.channel').addClass('active').siblings().removeClass('active');
+        $(".channel").click();
+        $timeout(function() {
+            var el = document.getElementsByClassName('channel');
+            angular.element(el).triggerHandler('click');
+        }, 0);
+        console.log("param" + params[1]);
+    }
+    else if(params[1]=="user"){
+        $('.user').addClass('active').siblings().removeClass('active');
+        $(".user").click();
+        
+            var el = document.getElementsByClassName('user');
+            angular.element(el).triggerHandler('click');
+       
+        console.log("param" + params[1]);
+    }
+    else if(params[1]=="alert"){
+        $('.alerts').addClass('active').siblings().removeClass('active');
+        $(".alerts").click();
+        console.log("param" + params[1]);
+    }
+    else if(params[1]=="camera"){
+        $('.camera').addClass('active').siblings().removeClass('active');
+        $(".camera").click();
+        console.log("param" + params[1]);
+    }
+
 }
 ///////////////////
