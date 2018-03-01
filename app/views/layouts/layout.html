@@ -44,42 +44,56 @@
     <script src="../../scripts/controllers/usercontroller.js"></script>
     <script src="../../scripts/controllers/cameracontroller.js"></script>
     <script src="../../scripts/controllers/alertcontroller.js"></script>
+    <script src="../../scripts/controllers/logincontroller.js"></script>
 
 </head>
 
-    <body ng-app="CicsoCloudConsole" class="">
-        <div class="container-fluid">
-            <div class="row">
+<body ng-app="CicsoCloudConsole" class="">
+    <div class="container-fluid">
+
+        <div class="row">
+            <div id="mainView" style="display: none;">
                 <!-- Header -->
                 <div class='' ng-include src="'views/partials/header.html'"></div>
-                
+
                 <!-- Main Panel -->
                 <div class="col-md-12 mainPanel" style="padding: 0px;">
                     <div class="row " style="background-color:#2C3A4B;">
                         <!-- Left Panel -->
                         <div class='' ng-include src="'views/partials/leftPanel.html'"></div>
+                        
                         <!-- Ng View - Main Center & Main Right -->
                         <div ng-view></div>
                     </div>
                 </div>
-                
-                <!-- footer -->
-                <div class='' ng-include src="'views/partials/footer.html'"></div>
             </div>
+
+            <div id="loginView">
+                <!-- Ng View - Main Center & Main Right -->
+                <div ng-view></div>
+            </div>
+
+            <!-- footer -->
+            <div class='' ng-include src="'views/partials/footer.html'"></div>
         </div>
-    </body>
+
+
+    </div>
+</body>
+
 </html>
 
 
 <script>
     $(document).ready(function () {
-       
-        // if (loadHeader) {
-        //     $(".isShowingEnable").css("display", "block")
-        // } else {
-        //     $(".isShowingEnable").css("display", "none")
-        // }
+
+        if (loadMain) {
+            $("#loginView").css("display", "none") ;
+            $("#mainView").css("display", "block");
+        } else {
+            $("#loginView").css("display", "block") ;
+            $("#mainView").css("display", "none")
+        }
     });
 
 </script>
-

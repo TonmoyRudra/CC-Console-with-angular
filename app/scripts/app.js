@@ -13,25 +13,30 @@ var ciscoCloudConsoleApp = angular.module('CicsoCloudConsole', ['ngRoute']);
 
 ciscoCloudConsoleApp.config(function ($routeProvider) {
     $routeProvider
+        .when('/', {
+            templateUrl: 'views/login/login.html',
+            controller: 'LoginCtrl',
+            caseInsensitiveMatch: true,
+        })
         .when('/channel', {
-            templateUrl: 'views/channel.html',
+            templateUrl: 'views/main/channel.html',
             controller: 'ChannelCtrl',
             caseInsensitiveMatch: true,
 
         })
         .when('/user', {
-            templateUrl: 'views/user.html',
+            templateUrl: 'views/main/user.html',
             controller: 'UserCtrl',
             caseInsensitiveMatch: true,
         })
         .when('/alert', {
-            templateUrl: 'views/alert.html',
+            templateUrl: 'views/main/alert.html',
             controller: 'AlertCtrl',
             caseInsensitiveMatch: true,
 
         })
         .when('/camera', {
-            templateUrl: 'views/camera.html',
+            templateUrl: 'views/main/camera.html',
             controller: 'CameraCtrl',
             caseInsensitiveMatch: true,
 

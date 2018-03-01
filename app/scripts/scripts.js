@@ -74,6 +74,8 @@ jQuery(document).ready(function() {
 		
 		// to show chat box and hidden all
 		$(".mainPanelCenter .tabs").css("display","none")
+		$(".mainPanelRight .tabs").css("display","none")
+		
 		$(".channelSingle").css("display","block");
 		$(".chatBoxMain ul").scrollTop(function() { return this.scrollHeight; });
 	});
@@ -86,6 +88,7 @@ jQuery(document).ready(function() {
 		
 		// to show chat box and hidden all
 		$(".mainPanelCenter .tabs").css("display","none")
+		$(".mainPanelRight .tabs").css("display","none")
 		$(".channelSingle").css("display","block");
 	});
 
@@ -107,7 +110,8 @@ jQuery(document).ready(function() {
 		}
 		else {
 			$(".mainPanelCenter .tabs").css("display","none")
-			$(".defaultPanel").css("display","block")
+			$(".mainPanelRight .tabs").css("display","none")
+			$(".defaultPanel ").css("display","block")
 		}
 
 	});

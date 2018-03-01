@@ -417,8 +417,23 @@ label::before {
 	padding-top: 5px;
 }
 
+.footer{
+	color: white; 
+	background-color:#000000;
+	padding: 0px;
+	position:absolute; 
+	bottom:0;
+}
+.footer-right{
+	
+}
+.footer p{
+	font-size: 12px;
+}
 
-
+.footer p a{
+	color:white;  
+}
 /*==================================================
 =                        Media Queries             =
 ==================================================*/

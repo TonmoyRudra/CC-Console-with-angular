@@ -2,17 +2,16 @@
  * Copyright (c) 2017 by CISCO.
  * All Rights Reserved
  * CISCO Confidential
- * @name CiscoCloud.controller:ChannelCtrl
+ * @name CiscoCloud.controller:LoginCtrl
  * @description
- * # ChannelCtrl
+ * # LoginCtrl
  * Controller of the CISCO
  */
 
-var myApp = angular.module('CicsoCloudConsole').controller('CameraCtrl', ['$scope', '$http', '$location', CameraCtrl]);
+var myApp = angular.module('CicsoCloudConsole').controller('LoginCtrl', ['$scope', '$http', '$location', LoginCtrl]);
 
 
-function CameraCtrl($scope, $http, $location) {
-    loadLogin = false;
+function LoginCtrl($scope, $http, $location) {
     // var chkSession = (localStorage.getItem('sessionToken')) === null ? "false" : "true";
     // var isLoggedIn = (chkSession === 'true');
     // if (!isLoggedIn) {
@@ -22,5 +21,10 @@ function CameraCtrl($scope, $http, $location) {
 
         
     // }
-    // alert("hi i am CamCtrl")
+
+    
+    $scope.login = function(){
+        loadMain == true;
+        $location.path('/channel')
+    }
 }

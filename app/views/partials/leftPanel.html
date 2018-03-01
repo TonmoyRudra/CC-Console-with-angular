@@ -1,13 +1,13 @@
 <script src="../../scripts/scripts.js" type="text/javascript"></script>
  <!-- Main Left -->
- <div class="col-md-2 col-sm-3 mainPanelLeft" ng-controller="CommonCtrl" style="padding-right: 0px;">
+ <div class="col-md-2 col-sm-3 mainPanelLeft" style="padding-right: 0px;">
     <div class="mainPanelLeft" style=" background-color:#445366;">
         <div class="tabs standard ">
             <div class="col-md-12 col-sm-12 left-tab" style="padding: 0px;">
                 <div style="height:48px; background-color:#2C3A4B;  padding-top: 1px;padding-left: 14px;">
-                    <ul class="tab-links row "   style="margin-right:0px;" >
+                    <ul class="tab-links row " ng-controller="CommonCtrl" style="margin-right:0px;" >
                         <li class="channel active col-md-3 col-sm-3 col-xs-3"  ng-click="loadSegment('channel',$event)" style=" line-height: 0em;    padding: 0px;">
-                            <a tabFor="channels" >
+                            <a tabFor="channels">
                                 <span class="tabView-left-icon ">
                                     <img src="images/icons/channel_group_512x512.png" class="iconTab " />
                                     <span class="tabText activeTabText" id="channel-lefttab">Channels</span>

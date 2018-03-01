@@ -12,6 +12,7 @@ var myApp = angular.module('CicsoCloudConsole').controller('ChannelCtrl', ['$sco
 
 
 function ChannelCtrl($scope, $http, $location) {
+    
     // var chkSession = (localStorage.getItem('sessionToken')) === null ? "false" : "true";
     // var isLoggedIn = (chkSession === 'true');
     // if (!isLoggedIn) {
